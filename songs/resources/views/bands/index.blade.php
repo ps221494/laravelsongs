@@ -29,6 +29,7 @@
       <td>{{ $bandall->name }}</td>
       <td>{{ $bandall->genre }}</td>
       <td>{{ $bandall->founded }}</td>
+      <td>{{ $bandall->founded }}</td>
 
       <td>
       <form action="{{ route('bands.destroy',$bandall->id) }}" method="POST">

@@ -14,7 +14,8 @@ class CreateBandsTable extends Migration
     public function up()
     {
         Schema::create('bands', function (Blueprint $table) {
-            $table->Id();
+            $table->engine = 'InnoDB';
+            $table->increments("id")->unsigned(false);
             $table->string("name")->nullable(false);
             $table->string("genre")->nullable(false);
             $table->integer("founded")->lentgh(4);

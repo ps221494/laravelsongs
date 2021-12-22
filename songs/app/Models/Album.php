@@ -13,4 +13,11 @@ class Album extends Model
     public function Bandsrel(){
         return $this->belongsTo('App\Band');
     }
+
+    public function songsrel()
+    {
+        return $this->belongsToMany('App\Song');
+    }
+
+    
 }

@@ -10,4 +10,8 @@ class Song extends Model
     protected $fillable = [
         'title', 'singer',
     ];
+    public function AlbumRel()
+    {
+        return $this->belongsToMany('App\Album');
+    }
 }
